@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-// import Contact from './components/ContactView';
+import Contact from './components/ContactView';
 
 const App = ()=> {
   return (
@@ -20,7 +20,7 @@ const App = ()=> {
         </a>
       </header>
       <div>
-        
+
       </div>
     </div>
   );
