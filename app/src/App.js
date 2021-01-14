@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Contact from './components/ContactView';
+// import Contact from './components/ContactView';
 
 function App() {
   return (
