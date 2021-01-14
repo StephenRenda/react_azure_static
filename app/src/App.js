@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 // import Contact from './components/ContactView';
 
-function App() {
+const App = ()=> {
   return (
     <div className="App">
       <header className="App-header">
