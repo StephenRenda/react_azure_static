@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 // import styles from "../App.module.css";
 
-const ContactView = (props) => {
+const ContactView = () => {
   const [state, setState] = useState({
     name: "",
     email: "",
@@ -57,7 +57,6 @@ const ContactView = (props) => {
 
   return (
     <div
-      ref={props.section}
       style={{ marginTop: "1rem" }}
     >
       <form onSubmit={()=>console.log("yes")} noValidate autoComplete="off">
