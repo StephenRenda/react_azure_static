@@ -1,10 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import Contact from './components/ContactView';
+import Body from './components/BodyView';
 
 const App = ()=> {
   return (
-      <Contact/>
+      <Body/>
   );
 }
 
