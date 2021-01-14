@@ -5,7 +5,6 @@ import Contact from './components/ContactView';
 function App() {
   return (
     <div className="App">
-      <Contact/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
