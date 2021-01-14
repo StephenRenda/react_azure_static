@@ -1,4 +1,4 @@
-import Body from './components/BodyView';
+import Body from './components/Welcome/Welcome';
 
 const App = ()=> {
   return (
