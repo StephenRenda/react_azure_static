@@ -20,7 +20,7 @@ const App = ()=> {
         </a>
       </header>
       <div>
-
+      <Contact/>
       </div>
     </div>
   );
