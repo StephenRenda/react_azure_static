@@ -1,18 +1,18 @@
-.welcome {
+.landingView {
   background-color: #252934;
   justify-content: center;
   text-align: center;
   height: 100vh;
   width: 100vw;
 }
-.greeting {
+.container {
   font-family: Dosis;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .name {
   color: white;
   padding-top: 30vh;
-  margin: 1rem;
+  margin: 0%;
 }
 .title {
   color: white;

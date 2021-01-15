@@ -3,14 +3,13 @@ import styles from './Welcome.module.css';
 const Welcome = () => {
   return (
     <Grid
-      className={styles.welcome}
+      className={styles.landingView}
       container
-      spacing={3}
+      spacing={4}
     >
     <Grid
-      className={styles.greeting}
+      className={styles.container}
       item
-      xs={12}
     >
       <div className={styles.name}>
         Stephen Renda Jr
