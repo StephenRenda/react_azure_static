@@ -1,8 +1,8 @@
-import Body from './components/Welcome/Welcome';
+import Welcome from './components/Welcome/Welcome';
 
 const App = ()=> {
   return (
-      <Body/>
+    <Welcome/>
   );
 }
 

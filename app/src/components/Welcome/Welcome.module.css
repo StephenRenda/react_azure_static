@@ -1,4 +1,26 @@
 .welcome {
-  background-color: "#252934";
+  background-color: #252934;
+  justify-content: center;
+  text-align: center;
   height: 100vh;
+  width: 100vw;
+}
+.greeting {
+  font-family: Dosis;
+  font-size: 4rem;
+}
+.name {
+  color: white;
+  padding-top: 30vh;
+  margin: 1rem;
+}
+.title {
+  color: white;
+  margin: 1rem;
+}
+.button {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  font-family: Dosis !important;
+  font-size: 2rem !important;
 }
