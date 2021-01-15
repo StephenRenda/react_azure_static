@@ -7,6 +7,10 @@
 }
 .container {
   font-family: Dosis;
+  font-size: 2rem;
+}
+.containerMobile {
+  font-family: Dosis;
   font-size: 3.5rem;
 }
 .name {

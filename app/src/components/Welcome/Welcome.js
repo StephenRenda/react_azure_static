@@ -1,10 +1,11 @@
 import { Button, Grid } from '@material-ui/core';
 import styles from './Welcome.module.css';
+import { isMobile } from "react-device-detect";
 
 const Welcome = () => {
   return (
     <Grid className={styles.landingView} container spacing={4}>
-      <Grid className={styles.container} item>
+      <Grid className={isMobile ? styles.containerMobile: styles.container} item>
         <div className={styles.name}>
           Stephen Renda Jr.
         </div>

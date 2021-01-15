@@ -1,22 +1,11 @@
 import React from 'react';
 import { Grid, Card, CardContent, Typography, CardActions, Link, Button} from "@material-ui/core";
 import styles from './Works.module.css';
-import { isMobile } from "react-device-detect";
 
 const Works = ()=> {
     
   return (
-    <Grid
-    container
-    spacing={4}
-    justify="center"
-    style={{
-      paddingTop: "10vh",
-      paddingBottom: "10vh",
-      backgroundColor: "#eaeded",
-      minHeight: "100vh",
-    }}
-  >
+    <Grid className={styles.ButtonworksView} container spacing={4} justify="center" >
     <Grid item component={Card} xs={12} md={4} style={{ margin: "2rem" }}>
       <CardContent style={{ textAlign: "left" }}>
         <Grid container>
@@ -70,24 +59,8 @@ const Works = ()=> {
         </Link>
       </CardActions>
     </Grid>
-      {/* <Grid
-        item
-        xs={12}
-        style={{ textAlign: "center", marginBottom: "1rem" }}
-      >
-        <Button
-          style={{ backgroundColor: "white" }}
-          variant="outlined"
-          onClick={() => {
-            // setExpand(!expand);
-          }}
-        >
-          Show More
-        </Button>
-      </Grid> */}
-    
+
       <Grid item component={Card} xs={12} md={4} style={{ margin: "2rem" }}>
-        {" "}
         <CardContent style={{ textAlign: "left" }}>
           <Grid container>
             <Grid item>
@@ -140,7 +113,6 @@ const Works = ()=> {
       </Grid>
     
       <Grid item component={Card} xs={12} md={4} style={{ margin: "2rem" }}>
-        {" "}
         <CardContent style={{ textAlign: "left" }}>
           <Grid container>
             <Grid item>
@@ -161,33 +133,6 @@ const Works = ()=> {
         </CardContent>
         <CardActions>
           <Link href="https://stephenrenda.github.io/Quiz_App/">
-            <Typography>Learn More</Typography>
-          </Link>
-        </CardActions>
-      </Grid>
-    
-      <Grid item component={Card} xs={12} md={4} style={{ margin: "2rem" }}>
-        {" "}
-        <CardContent style={{ textAlign: "left" }}>
-          <Grid container>
-            <Grid item>
-              <Typography variant="h5" component="h2">
-                Music Portfolio
-              </Typography>
-              <Typography color="textSecondary">REACT-JS</Typography>
-              <Typography
-                variant="body2"
-                component="p"
-                style={{ height: "5vh" }}
-              >
-                Static page for fast load time. Music portfolio <br />
-              </Typography>
-            </Grid>
-            <Grid item></Grid>
-          </Grid>
-        </CardContent>
-        <CardActions>
-          <Link href="https://stephenrenda.github.io/AudioClean/">
             <Typography>Learn More</Typography>
           </Link>
         </CardActions>
