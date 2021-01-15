@@ -24,3 +24,6 @@
   font-family: Dosis !important;
   font-size: 2rem !important;
 }
+body {
+  margin: 1rem;
+}
