@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Card, CardContent, Typography, CardActions, Link, Button} from "@material-ui/core";
+import { Grid, Card, CardContent, Typography, CardActions, Link} from "@material-ui/core";
 import styles from './Works.module.css';
 
 const Works = ()=> {
