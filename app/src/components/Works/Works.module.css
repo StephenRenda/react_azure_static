@@ -1,12 +1,13 @@
 .worksView {
-  background-color: #75b2f0;
+  background-color: #bfddfa;
   padding-top: 10vh;
   padding-bottom: 10vh;
   min-height: 100vh;
 }
-
 .container {
-  background-color: #93b1dc;
   margin: 2rem !important;
-  height: 20rem;
+  min-width: 350px;
+}
+.info {
+  height: 4rem;
 }

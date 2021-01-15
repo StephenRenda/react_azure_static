@@ -10,7 +10,7 @@ const Welcome = () => {
           Stephen Renda Jr.
         </div>
         <div className={styles.title}>
-        Full Stack Developer
+        Full Stack Developer 
         </div>
         <Button className={styles.button} variant="outlined" onClick={() => alert("Hey")}>
           Check out my work!
