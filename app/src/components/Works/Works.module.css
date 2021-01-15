@@ -1,0 +1,15 @@
+.worksView {
+  background-color: #75b2f0;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin-top: 1% !important;
+}
+
+.container {
+  background-color: #93b1dc;
+  margin: 2rem !important;
+  height: 20rem;
+}
