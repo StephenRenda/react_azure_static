@@ -5,6 +5,7 @@
   min-height: 100vh;
 }
 .container {
+  background-color: #e8eef3 !important;
   margin: 2rem !important;
   min-width: 350px;
 }
