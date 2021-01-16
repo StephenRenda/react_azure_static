@@ -35,7 +35,7 @@ const Works = ()=> {
                     React, Redux, MongoDB, Express
                 </Typography>
                 <Typography className={styles.info} variant="body2" component="p">
-                Fully functioning ecommerce website using Paypal. Manages users and inventory aswell, and also provides admin privilges. (Add new product, check orders, etc.)
+                Fully functioning ecommerce website using Paypal. Manages users, inventory, and provides admin privilges like adding new products, check orders, etc.
                 </Typography>
         </CardContent>
         <CardActions>
@@ -72,7 +72,7 @@ const Works = ()=> {
         </CardActions>
         </Grid>
         {/* Exercise Tracker */}
-        <Grid item component={Card} xs={12} md={4} style={{ margin: "2rem" }}>
+        <Grid className={styles.container} item component={Card} xs={12} md={4} >
             <CardContent style={{ textAlign: "left" }}>
             <Grid container>
                 <Grid item>
@@ -98,7 +98,7 @@ const Works = ()=> {
             </CardActions>
         </Grid>
         {/* Tic Tac Toe */}
-        <Grid item component={Card} xs={12} md={4} style={{ margin: "2rem" }}>
+        <Grid className={styles.container} item component={Card} xs={12} md={4} >
             <CardContent style={{ textAlign: "left" }}>
             <Grid container>
                 <Grid item>
@@ -124,7 +124,7 @@ const Works = ()=> {
             </CardActions>
         </Grid>
         {/* Quiz App */}
-        <Grid item component={Card} xs={12} md={4} style={{ margin: "2rem" }}>
+        <Grid className={styles.container} item component={Card} xs={12} md={4} >
             <CardContent style={{ textAlign: "left" }}>
             <Grid container>
                 <Grid item>
