@@ -4,7 +4,7 @@ import Works from './components/Works/Works';
 
 const App = ()=> {
   return (
-    <div style={style}>
+    <div>
       <Welcome/>
       <Works/>
     </div>
@@ -13,6 +13,3 @@ const App = ()=> {
 
 export default App;
 
-const style ={
-  minWidth: "350px"
-}
