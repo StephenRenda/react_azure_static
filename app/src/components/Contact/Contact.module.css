@@ -1,0 +1,17 @@
+.contactView {
+  text-align: center;
+  height: 100vh;
+  /* width: calc(100% + 32px); */
+  background-color: #e7f1ff !important;
+}
+.formContainer {
+  padding-top: 25vh;
+}
+.entry {
+  width: 25vw;
+  margin: 1rem !important;
+}
+.entryMobile {
+  width: 50vw;
+  margin: 1rem !important;
+}

@@ -1,8 +1,9 @@
 .worksView {
   background-color: #bfddfa;
-  padding-top: 10vh;
+  padding-top: 5vh;
   padding-bottom: 10vh;
   min-height: 100vh;
+  margin-top: 1rem !important;
 }
 .container {
   background-color: #f3f8fc !important;

@@ -1,0 +1,17 @@
+.contactButton {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  font-size: 40;
+}
+.lightContactButton {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  color: aliceblue;
+}
+.noContactButton {
+  position: fixed;
+  display: none;
+  bottom: -100px;
+}
