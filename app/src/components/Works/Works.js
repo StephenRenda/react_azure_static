@@ -31,7 +31,12 @@ const Works = ()=> {
             </CardContent>
             <CardActions>
                 <Link onClick={()=>setToggle(!toggle)}>
-                <Typography>Learn More</Typography>
+                <Typography>        
+                    { toggle ?
+                    "Close" :
+                    "Learn More "
+                    }
+                </Typography>
                 </Link>
             </CardActions>
             </Grid>
