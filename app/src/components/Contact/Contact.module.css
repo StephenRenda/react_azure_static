@@ -3,6 +3,7 @@
   height: 100vh;
   /* width: calc(100% + 32px); */
   background-color: #e7f1ff !important;
+  min-height: 400px;
 }
 .formContainer {
   padding-top: 25vh;

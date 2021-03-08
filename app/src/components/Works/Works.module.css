@@ -5,10 +5,16 @@
   min-height: 100vh;
   margin-top: 1rem !important;
 }
+.firstContainer {
+  background-color: #f3f8fc !important;
+  margin: 2rem !important;
+  min-width: 350px;
+}
 .container {
   background-color: #f3f8fc !important;
   margin: 2rem !important;
   min-width: 350px;
+  max-height: 225px;
 }
 .info {
   height: 4rem;

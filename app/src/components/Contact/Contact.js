@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { Grid, TextField, Button} from "@material-ui/core";
 import { isMobile } from "react-device-detect";
 
-// import Axios from "axios";
+import Axios from "axios";
 
 import styles from "./Contact.module.css";
 
 const Contact = (props) => {
   const [state, setState] = useState({
-    // name: "",
-    // email: "",
-    // message: "",
+    name: "",
+    email: "",
+    message: "",
     emailSent: null,
   });
   const [disabled, setDisabled] = useState(true);
@@ -27,33 +27,33 @@ const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevents refresh
     setDisabled(true);
-    // const { name, email, message } = state;
+    const { name, email, message } = state;
     console.log(" and LOOK HERE", state);
 
-    // !state.emailSent &&
-    //   Axios.post("/api/email", { name, email, message })
-    //     .then((res) => {
-    //       console.log("then", res);
+    !state.emailSent &&
+      Axios.post("/api/email", { name, email, message })
+        .then((res) => {
+          console.log("then", res);
 
-    //       if (res.data.success) {
-    //         setDisabled(false);
-    //         setState({
-    //           emailSent: true,
-    //         });
-    //       } else {
-    //         setDisabled(false);
-    //         setState({
-    //           emailSent: false,
-    //         });
-    //       }
-    //     })
-    //     .catch((err) => {
-    //       console.log(err.response);
-    //       setDisabled(false);
-    //       setState({
-    //         emailSent: false,
-    //       });
-    //     });
+          if (res.data.success) {
+            setDisabled(false);
+            setState({
+              emailSent: true,
+            });
+          } else {
+            setDisabled(false);
+            setState({
+              emailSent: false,
+            });
+          }
+        })
+        .catch((err) => {
+          console.log(err.response);
+          setDisabled(false);
+          setState({
+            emailSent: false,
+          });
+        });
   };
 
   return (
@@ -68,7 +68,7 @@ const Contact = (props) => {
             multiline
             required
             className={isMobile ? styles.entryMobile : styles.entry}
-            // value={state.name}
+            value={state.name}
             name="name"
             onChange={updateField}
           />
