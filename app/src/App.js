@@ -4,13 +4,14 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import {Typography} from "@material-ui/core";
 import Welcome from './components/Welcome/Welcome';
 import Works from './components/Works/Works';
-import Contact from './components/Contact/Contact';
+// import Contact from './components/Contact/Contact';
 
 import styles from "./App.module.css";
 
 const App = ()=> {
   // const welcomeSection = useRef(null), 
-  const worksSection = useRef(null), contactSection = useRef(null);
+  const worksSection = useRef(null); 
+  // contactSection = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [toggle,setToggle] = useState(false)
   // const [workSectionPosition, setWorkSectionPosition] = useState(0);
