@@ -34,7 +34,7 @@ const App = ()=> {
 
   useEffect(() => {
     // Update the document title using the browser API
-    console.log(`Scroll position: ${scrollPosition}`);
+    // console.log(`Scroll position: ${scrollPosition}`);
     // console.log(`Offset of works section: ${workSectionPosition}`);
     // setWorkSectionPosition(worksSection.current.offsetTop)
     if (scrollPosition >= 0 ) { setDynamicButtonStyle(styles.lightContactButton)} 

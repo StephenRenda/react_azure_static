@@ -19,7 +19,6 @@ const Contact = (props) => {
       ...data,
       [e.target.id]: e.target.value,
     });
-    console.log(data)
     if (data.name !== "" && data.email !== "" && data.message !== "")
       setDisabled(false);
   };
