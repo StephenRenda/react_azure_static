@@ -4,14 +4,13 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import {Typography} from "@material-ui/core";
 import Welcome from './components/Welcome/Welcome';
 import Works from './components/Works/Works';
-// import Contact from './components/Contact/Contact';
+import Contact from './components/Contact/Contact';
 
 import styles from "./App.module.css";
 
 const App = ()=> {
   // const welcomeSection = useRef(null), 
-  const worksSection = useRef(null); 
-  // contactSection = useRef(null);
+  const worksSection = useRef(null), contactSection = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [toggle,setToggle] = useState(false)
   // const [workSectionPosition, setWorkSectionPosition] = useState(0);
@@ -40,9 +39,8 @@ const App = ()=> {
     // setWorkSectionPosition(worksSection.current.offsetTop)
     if (scrollPosition >= 0 ) { setDynamicButtonStyle(styles.lightContactButton)} 
     if (scrollPosition >= worksSection.current.offsetTop ) { setDynamicButtonStyle(styles.contactButton)} 
-    // if (scrollPosition >= contactSection.current.offsetTop) { setDynamicButtonStyle(styles.noContactButton)} 
+    if (scrollPosition >= contactSection.current.offsetTop) { setDynamicButtonStyle(styles.noContactButton)} 
   },[scrollPosition]);
-
 
   return (
     <div>
@@ -54,15 +52,15 @@ const App = ()=> {
       <MailOutlineIcon fontSize="large" 
       className={dynamicButtonStyle}
       // className={workSectionPosition <= scrollPosition ? styles.contactButton : styles.noContactButton} scrollToRef(contactSection)
-      onClick={() => setToggle(!toggle)}/>
+      onClick={() => scrollToRef(contactSection)}/>
       }
 
       <div ref={worksSection}>
         <Works />
       </div>
-      {/* <div ref={contactSection}>
+      <div ref={contactSection}>
       <Contact/>
-      </div> */}
+      </div>
     </div>
   );
 }

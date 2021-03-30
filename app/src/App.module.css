@@ -9,6 +9,10 @@
   right: 10px;
   top: 10px;
   color: aliceblue;
+  /* position: absolute;
+  color: aliceblue;
+  right: 47vw;
+  top: 70vh; */
 }
 .noContactButton {
   position: fixed;

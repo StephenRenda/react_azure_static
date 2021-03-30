@@ -40,7 +40,6 @@ const Works = ()=> {
                 </Link>
             </CardActions>
             </Grid>
-            
 
             {/* Original Art */}
             <Grid className={styles.container} item component={Card} xs={12} md={4} >
