@@ -39,7 +39,7 @@ const Contact = (props) => {
       })
   }  
   return (
-    <Grid className={styles.contactView} container spacing={4} justify="center" >
+    <Grid className={styles.contactView} container  justify="center" >
 
       <form className={styles.formContainer} onSubmit={onSubmit} method="POST" >
         <div>

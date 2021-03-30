@@ -1,9 +1,7 @@
 .landingView {
-  background-color: #252934;
+  position: absolute;
   justify-content: center;
   text-align: center;
-  height: 100vh;
-  width: 100vw;
 }
 .container {
   font-family: Dosis;
@@ -27,11 +25,12 @@
   font-family: Dosis !important;
   font-size: 1.5rem !important;
   font-weight: lighter;
+  z-index: 2;
 }
 .button:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 3px 10px rgba(255, 255, 255, 1);
 }
 body {
-  margin: 1rem;
+  margin: 0;
 }

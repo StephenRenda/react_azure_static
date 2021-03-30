@@ -3,18 +3,20 @@
   padding-top: 5vh;
   padding-bottom: 10vh;
   min-height: 100vh;
-  margin-top: 1rem !important;
+  width: 100%;
 }
 .firstContainer {
   background-color: #f3f8fc !important;
   margin: 2rem !important;
   min-width: 350px;
+  padding: 16px;
 }
 .container {
   background-color: #f3f8fc !important;
   margin: 2rem !important;
   min-width: 350px;
   max-height: 225px;
+  padding: 16px;
 }
 .info {
   height: 4rem;

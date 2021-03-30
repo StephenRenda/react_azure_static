@@ -6,11 +6,11 @@ const Works = ()=> {
 
     const [toggle,setToggle] = useState(false);
     return (
-        <Grid className={styles.worksView} container spacing={4} justify="center" >
+        <Grid className={styles.worksView} container  justify="center" >
             {/* Loan Managment App */}
 
             <Grid className={styles.firstContainer} item component={Card} xs={12} md={4} >
-            <CardContent style={{ textAlign: "left" }}>
+            <CardContent style={{ textAlign: "left"}}>
                     <Typography variant="h5" component="h2">
                         Loan Managment App
                     </Typography>
@@ -147,7 +147,7 @@ const Works = ()=> {
                     <Typography variant="h5" component="h2">
                         Quiz App
                     </Typography>
-                    <Typography color="textSecondary">REACT-JS</Typography>
+                    <Typography color="textSecondary">React</Typography>
                     <Typography
                         variant="body2"
                         component="p"
