@@ -11,7 +11,7 @@ const Welcome = (props) => {
       <Grid className={styles.landingView} container>
         <Grid className={isMobile ? styles.containerMobile: styles.container} item>
 
-          <div className={styles.name}>
+          <div>
             Stephen Renda Jr.
           </div>
           <div className={styles.title}>
