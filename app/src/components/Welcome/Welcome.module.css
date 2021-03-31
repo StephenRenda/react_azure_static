@@ -15,10 +15,8 @@
   padding-top: 20vh;
 }
 .name {
-  color: rgba(217, 217, 217, 0.99);
 }
 .title {
-  color: rgba(217, 217, 217, 0.99);
   margin: 1rem;
 }
 .paragraph {
@@ -30,7 +28,7 @@
   margin: auto !important;
 }
 .paragraphMobile {
-  font-size: 0.3rem;
+  font-size: 0.8rem !important;
   text-align: left;
   padding: 2rem;
   padding-bottom: 0%;

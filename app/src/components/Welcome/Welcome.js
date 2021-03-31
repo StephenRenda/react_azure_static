@@ -21,7 +21,7 @@ const Welcome = (props) => {
             Check out my work!
           </Button>
 
-          <Typography variant="body1"  className={isMobile ? styles.paragraphMobile: styles.paragraph}>
+          <Typography   className={isMobile ? styles.paragraphMobile: styles.paragraph}>
             Hello, I am a software engineer looking for a entry or junior position. I graduated Fall 2020 with 
             a B.S in Computer Science from Sacramento State University. I am most comfortable creating web applications
             with React and have many full stack React apps below. Recently I have been learning Asp.net core and
