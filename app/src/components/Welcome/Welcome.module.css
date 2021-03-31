@@ -2,30 +2,47 @@
   position: absolute;
   justify-content: center;
   text-align: center;
+  z-index: 2;
 }
 .container {
   font-family: Dosis;
   font-size: 3rem;
+  padding-top: 30vh;
 }
 .containerMobile {
   font-family: Dosis;
   font-size: 2rem;
+  padding-top: 20vh;
 }
 .name {
-  color: white;
-  padding-top: 30vh;
+  color: rgba(217, 217, 217, 0.99);
 }
 .title {
-  color: white;
+  color: rgba(217, 217, 217, 0.99);
   margin: 1rem;
 }
+.paragraph {
+  font-size: 1rem;
+  text-align: left;
+  padding: 2rem;
+  padding-bottom: 0%;
+  width: 50%;
+  margin: auto !important;
+}
+.paragraphMobile {
+  font-size: 0.3rem;
+  text-align: left;
+  padding: 2rem;
+  padding-bottom: 0%;
+  width: 80%;
+  margin: auto !important;
+}
 .button {
-  color: #ffffff !important;
-  border-color: #ffffff !important;
+  color: rgba(217, 217, 217, 0.99) !important;
+  border-color: rgba(217, 217, 217, 0.99) !important;
   font-family: Dosis !important;
   font-size: 1.5rem !important;
   font-weight: lighter;
-  z-index: 2;
 }
 .button:hover {
   color: rgba(255, 255, 255, 1);

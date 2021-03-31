@@ -7,7 +7,7 @@ const Stars = () => {
   let theta = 0;
   useFrame(() => {
     if (group.current) {
-      const r = 5 * Math.sin(THREE.Math.degToRad((theta += 0.002)));
+      const r = 5 * Math.sin(THREE.Math.degToRad((theta += 0.005)));
       const s = Math.cos(THREE.Math.degToRad(theta * 2));
       group.current.rotation.set(r, r, r);
       group.current.scale.set(s, s, s);

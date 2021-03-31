@@ -55,7 +55,7 @@ const Works = ()=> {
                     </Typography>
             </CardContent>
             <CardActions>
-                <Link href="https://original-art.herokuapp.com/">
+                <Link onClick={()=> window.open("https://original-art.herokuapp.com/")}>
                 <Typography>Learn More</Typography>
                 </Link>
             </CardActions>
@@ -82,7 +82,7 @@ const Works = ()=> {
                 </Grid>
             </CardContent>
             <CardActions>
-                <Link href="https://covid-tracker1.herokuapp.com/">
+                <Link onClick={()=> window.open("https://covid-tracker1.herokuapp.com/")}>
                 <Typography>Learn More</Typography>
                 </Link>
             </CardActions>
@@ -108,7 +108,7 @@ const Works = ()=> {
                 </Grid>
                 </CardContent>
                 <CardActions>
-                <Link href="https://frozen-mesa-34640.herokuapp.com/">
+                <Link onClick={()=> window.open("https://frozen-mesa-34640.herokuapp.com/")}>
                     <Typography>Learn More</Typography>
                 </Link>
                 </CardActions>
@@ -134,7 +134,7 @@ const Works = ()=> {
                 </Grid>
                 </CardContent>
                 <CardActions>
-                <Link href="https://stephenrenda.github.io/Tic_Tac_Toe_ES6/">
+                <Link onClick={()=> window.open("https://stephenrenda.github.io/Tic_Tac_Toe_ES6/")}>
                     <Typography>Learn More</Typography>
                 </Link>
                 </CardActions>
@@ -160,7 +160,7 @@ const Works = ()=> {
                 </Grid>
                 </CardContent>
                 <CardActions>
-                <Link href="https://stephenrenda.github.io/Quiz_App/">
+                <Link onClick={()=> window.open("https://stephenrenda.github.io/Quiz_App/")}>
                     <Typography>Learn More</Typography>
                 </Link>
                 </CardActions>
