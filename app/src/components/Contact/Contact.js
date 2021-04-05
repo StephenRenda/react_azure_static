@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid, TextField, Button} from "@material-ui/core";
+import { Grid, TextField, Button, CardContent, Card} from "@material-ui/core";
 import { isMobile } from "react-device-detect";
 import styles from "./Contact.module.css";
 import emailjs from 'emailjs-com'
@@ -39,16 +39,19 @@ const Contact = (props) => {
       })
   }  
   return (
-    <Grid className={styles.contactView} container  justify="center" >
+    <Grid className={styles.contactView} container justify="center" >
+      <Grid className={styles.formContainer} item component={Card} xs={11} md={6} >
 
-      <form className={styles.formContainer} onSubmit={onSubmit} method="POST" >
+      <CardContent style={{ textAlign: "left" }}>
+
+      <form onSubmit={onSubmit} method="POST" >
         <div>
           <TextField
             id="name"
             label="Name"
             placeholder=""
             multiline
-            className={isMobile ? styles.entryMobile : styles.entry}
+            className={isMobile ? styles.entryMobileSmall : styles.entrySmall}
             name="user_name"
             value={data.name}
             onChange={updateField}
@@ -61,7 +64,7 @@ const Contact = (props) => {
             placeholder=""
             multiline
             // required
-            className={isMobile ? styles.entryMobile : styles.entry}
+            className={isMobile ? styles.entryMobileSmall : styles.entrySmall}
             name="user_email"
             value={data.email}
             onChange={updateField}
@@ -93,6 +96,8 @@ const Contact = (props) => {
         : <p> </p>}
 
       </form>
+      </CardContent>
+      </Grid>
     </Grid>
   );
 }

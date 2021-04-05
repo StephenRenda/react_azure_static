@@ -4,15 +4,27 @@
   /* width: calc(100% + 32px); */
   background-color: #e7f1ff !important;
   min-height: 400px;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
 }
 .formContainer {
-  padding-top: 25vh;
+  background-color: #f3f8fc !important;
+  height: 100%;
+  min-height: 445px;
 }
 .entry {
-  width: 35vw;
+  width: 40vw;
+  margin: 1rem !important;
+}
+.entrySmall {
+  width: 25vw;
   margin: 1rem !important;
 }
 .entryMobile {
-  width: 50vw;
+  width: 70vw;
+  margin: 1rem !important;
+}
+.entryMobileSmall {
+  width: 60vw;
   margin: 1rem !important;
 }
