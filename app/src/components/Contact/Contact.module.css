@@ -13,11 +13,11 @@
   min-height: 445px;
 }
 .entry {
-  width: 40vw;
+  width: 25vw;
   margin: 1rem !important;
 }
 .entrySmall {
-  width: 25vw;
+  width: 20vw;
   margin: 1rem !important;
 }
 .entryMobile {
@@ -27,4 +27,9 @@
 .entryMobileSmall {
   width: 60vw;
   margin: 1rem !important;
+}
+.success {
+  color: green;
+  display: flex;
+  justify-content: center;
 }

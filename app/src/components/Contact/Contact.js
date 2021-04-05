@@ -25,7 +25,6 @@ const Contact = (props) => {
 
   const onSubmit=(e)=>{
     e.preventDefault()// Prevents default refresh by the browser
-    console.log(process.env.REACT_APP_TEMPLATE_ID)
     emailjs.sendForm('service_y67wj28', process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
       .then( result => {
         // alert('Message Sent, I\'ll get back to you shortly', result.text);
@@ -40,7 +39,7 @@ const Contact = (props) => {
   }  
   return (
     <Grid className={styles.contactView} container justify="center" >
-      <Grid className={styles.formContainer} item component={Card} xs={11} md={6} >
+      <Grid className={styles.formContainer} item component={Card} xs={11} md={4} >
 
       <CardContent style={{ textAlign: "left" }}>
 
@@ -82,15 +81,16 @@ const Contact = (props) => {
             onChange={updateField}
           />
         </div>
-
-        <Button
-          variant="outlined"
-          type="submit"
-          style={{ marginTop: "2rem" }}
-          disabled={disabled}
-        >
-          Send
-        </Button>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "10vh"}}>
+          <Button
+            variant="outlined"
+            type="submit"
+            style={{ marginTop: "2rem"}}
+            disabled={disabled}
+          >
+            Send
+          </Button>
+        </div>
         {data.emailSent ?
           <p className={styles.success}>&#x2713;</p>
         : <p> </p>}
