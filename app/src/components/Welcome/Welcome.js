@@ -22,19 +22,23 @@ const Welcome = (props) => {
           </Button>
 
           <Typography   className={isMobile ? styles.paragraphMobile: styles.paragraph}>
-            Hello, I am a software engineer looking for a entry or junior position. I graduated Fall 2020 with 
+            Hello, I'm looking for an entry or junior software engineering position. I have a B.S in Computer Science from Sacramento State University. 
+            Proficient with React, and learning Asp.net and Azure.
+            Send me a message :D
+            {/* Hello, I am a software engineer looking for a entry or junior position. I graduated Fall 2020 with 
             a B.S in Computer Science from Sacramento State University. I am most comfortable creating web applications
             with React and have many full stack React apps below. Recently I have been learning Asp.net core and
             the library SignalR, which uses websockets to stream data. I plan to use SignalR to create a chat application with
-            user profiles and rooms similiar to Discord. LetsChat app coming soon :D
+            user profiles and rooms similiar to Discord. LetsChat app coming soon :D */}
           </Typography>
-          <Link onClick={() => { window.open("https://www.linkedin.com/in/stephen-renda-aaa612183/")}}>
-            <LinkedInIcon fontSize="large" style={{color: "rgba(217, 217, 217, 0.99)"}} />
-          </Link>
-          <Link onClick={() => { window.open("https://github.com/StephenRenda")}}>
-            <GitHubIcon fontSize="large" style={{color: "rgba(217, 217, 217, 0.99)", paddingLeft: "1rem"}}/>
-          </Link>
-
+          <div style={{paddingTop: "1rem"}}>
+            <Link onClick={() => { window.open("https://www.linkedin.com/in/stephen-renda-aaa612183/")}}>
+              <LinkedInIcon fontSize="large" style={{color: "rgba(217, 217, 217, 0.99)"}} />
+            </Link>
+            <Link onClick={() => { window.open("https://github.com/StephenRenda")}}>
+              <GitHubIcon fontSize="large" style={{color: "rgba(217, 217, 217, 0.99)", paddingLeft: "1rem"}}/>
+            </Link>
+          </div>
         </Grid>
       </Grid>
       <Canvas>
