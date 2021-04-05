@@ -25,7 +25,7 @@ const Contact = (props) => {
 
   const onSubmit=(e)=>{
     e.preventDefault()// Prevents default refresh by the browser
-
+    console.log(process.env.REACT_APP_TEMPLATE_ID)
     emailjs.sendForm('service_y67wj28', process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
       .then( result => {
         // alert('Message Sent, I\'ll get back to you shortly', result.text);
