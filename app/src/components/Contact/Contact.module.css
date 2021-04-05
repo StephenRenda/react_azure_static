@@ -3,14 +3,12 @@
   height: 100vh;
   /* width: calc(100% + 32px); */
   background-color: #e7f1ff !important;
-  min-height: 400px;
-  padding-top: 25vh;
-  padding-bottom: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .formContainer {
   background-color: #f3f8fc !important;
-  height: 100%;
-  min-height: 445px;
 }
 .entry {
   width: 25vw;

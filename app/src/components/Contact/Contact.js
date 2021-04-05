@@ -40,63 +40,61 @@ const Contact = (props) => {
   return (
     <Grid className={styles.contactView} container justify="center" >
       <Grid className={styles.formContainer} item component={Card} xs={11} md={4} >
+        <CardContent style={{ textAlign: "left" }}>
+        <form onSubmit={onSubmit} method="POST" >
+          <div>
+            <TextField
+              id="name"
+              label="Name"
+              placeholder=""
+              multiline
+              className={isMobile ? styles.entryMobileSmall : styles.entrySmall}
+              name="user_name"
+              value={data.name}
+              onChange={updateField}
+            />
+          </div>
+          <div>
+            <TextField
+              id="email"
+              label="Email"
+              placeholder=""
+              multiline
+              // required
+              className={isMobile ? styles.entryMobileSmall : styles.entrySmall}
+              name="user_email"
+              value={data.email}
+              onChange={updateField}
+            />
+          </div>
+          <div>
+            <TextField
+              id="message"
+              label="Message"
+              multiline
+              rows={4}
+              className={isMobile ? styles.entryMobile : styles.entry}
+              name="message"
+              value={data.message}
+              onChange={updateField}
+            />
+          </div>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "10vh"}}>
+            <Button
+              variant="outlined"
+              type="submit"
+              style={{ marginTop: "2rem"}}
+              disabled={disabled}
+            >
+              Send
+            </Button>
+          </div>
+          {data.emailSent ?
+            <p className={styles.success}>&#x2713;</p>
+          : <p> </p>}
 
-      <CardContent style={{ textAlign: "left" }}>
-
-      <form onSubmit={onSubmit} method="POST" >
-        <div>
-          <TextField
-            id="name"
-            label="Name"
-            placeholder=""
-            multiline
-            className={isMobile ? styles.entryMobileSmall : styles.entrySmall}
-            name="user_name"
-            value={data.name}
-            onChange={updateField}
-          />
-        </div>
-        <div>
-          <TextField
-            id="email"
-            label="Email"
-            placeholder=""
-            multiline
-            // required
-            className={isMobile ? styles.entryMobileSmall : styles.entrySmall}
-            name="user_email"
-            value={data.email}
-            onChange={updateField}
-          />
-        </div>
-        <div>
-          <TextField
-            id="message"
-            label="Message"
-            multiline
-            rows={4}
-            className={isMobile ? styles.entryMobile : styles.entry}
-            name="message"
-            value={data.message}
-            onChange={updateField}
-          />
-        </div>
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "10vh"}}>
-          <Button
-            variant="outlined"
-            type="submit"
-            style={{ marginTop: "2rem"}}
-            disabled={disabled}
-          >
-            Send
-          </Button>
-        </div>
-        {data.emailSent ?
-          <p className={styles.success}>&#x2713;</p>
-        : <p> </p>}
-
-      </form>
-      </CardContent>
+        </form>
+        </CardContent>
       </Grid>
     </Grid>
   );
