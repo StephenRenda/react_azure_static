@@ -7,6 +7,32 @@ const Works = ()=> {
     const [toggle,setToggle] = useState(false);
     return (
         <Grid className={styles.worksView} container  justify="center" >
+            {/* Let's Chat  */}
+            <Grid className={styles.container} item component={Card} xs={12} md={4} >
+            <CardContent style={{ textAlign: "left" }}>
+                <Grid container>
+                <Grid item>
+                    <Typography variant="h5" component="h2">
+                    Let's Chat
+                    </Typography>
+                    <Typography color="textSecondary">ASP.NET, React </Typography>
+                    <Typography
+                    variant="body2"
+                    component="p"
+                    style={{ height: "6vh" }}
+                    >
+                    Chat application that makes use of websocket technology for realtime messaging. <br />
+                    </Typography>
+                </Grid>
+                <Grid item></Grid>
+                </Grid>
+            </CardContent>
+            <CardActions>
+                <Link onClick={()=> window.open("https://gray-mushroom-0ff2d0110.azurestaticapps.net/")}>
+                <Typography>Learn More</Typography>
+                </Link>
+            </CardActions>
+            </Grid>
             {/* Loan Managment App */}
 
             <Grid className={styles.firstContainer} item component={Card} xs={12} md={4} >
@@ -56,33 +82,6 @@ const Works = ()=> {
             </CardContent>
             <CardActions>
                 <Link onClick={()=> window.open("https://original-art.herokuapp.com/")}>
-                <Typography>Learn More</Typography>
-                </Link>
-            </CardActions>
-            </Grid>
-            {/* Covid Tracker */}
-            
-            <Grid className={styles.container} item component={Card} xs={12} md={4} >
-            <CardContent style={{ textAlign: "left" }}>
-                <Grid container>
-                <Grid item>
-                    <Typography variant="h5" component="h2">
-                    Covid-19 Tracker
-                    </Typography>
-                    <Typography color="textSecondary">React, material-ui, api</Typography>
-                    <Typography
-                    variant="body2"
-                    component="p"
-                    style={{ height: "6vh" }}
-                    >
-                    Covid pandemic tracker, using an api provided by the Centers for Disease Control and Prevention. <br />
-                    </Typography>
-                </Grid>
-                <Grid item></Grid>
-                </Grid>
-            </CardContent>
-            <CardActions>
-                <Link onClick={()=> window.open("https://covid-tracker1.herokuapp.com/")}>
                 <Typography>Learn More</Typography>
                 </Link>
             </CardActions>
