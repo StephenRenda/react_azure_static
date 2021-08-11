@@ -23,8 +23,7 @@ const Welcome = (props) => {
 
           <Typography   className={isMobile ? styles.paragraphMobile: styles.paragraph}>
             Hello, I'm looking for an entry or junior software engineering position. I have a B.S in Computer Science from Sacramento State University. 
-            Proficient with React, and learning Asp.net and Azure.
-            Send me a message :D
+            Proficient with React and Asp.net. Send me a message!
             {/* Hello, I am a software engineer looking for a entry or junior position. I graduated Fall 2020 with 
             a B.S in Computer Science from Sacramento State University. I am most comfortable creating web applications
             with React and have many full stack React apps below. Recently I have been learning Asp.net core and
