@@ -21,8 +21,8 @@ const Works = ()=> {
                         component="p"
                         style={{ height: "5vh" }}
                     >
-                        Uses ASP.NET Razor to list contact information, services, 
-                        and reviews for a local massage therapist. Still in development.  <br />
+                        Lists contact information, services, 
+                        and reviews for a local massage therapist.  <br />
                     </Typography>
                     </Grid>
                     <Grid item></Grid>
