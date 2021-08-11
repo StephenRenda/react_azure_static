@@ -29,7 +29,9 @@ const Contact = (props) => {
       .then( result => {
         // alert('Message Sent, I\'ll get back to you shortly', result.text);
         setData({
-          ...data,
+          name: "",
+          email: "",
+          message: "",
           emailSent: true
         });
       }, error => {
